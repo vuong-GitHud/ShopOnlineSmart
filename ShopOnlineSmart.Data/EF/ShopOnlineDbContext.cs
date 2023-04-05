@@ -12,6 +12,5 @@ namespace ShopOnlineSmart.Data.EF
         public ShopOnlineDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet
     }
 }
