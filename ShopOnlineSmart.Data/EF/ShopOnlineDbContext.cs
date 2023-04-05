@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShopOnlineSmart.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,12 @@ namespace ShopOnlineSmart.Data.EF
     {
         public ShopOnlineDbContext(DbContextOptions options) : base(options)
         {
+        }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Category { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
         }
     }
 }

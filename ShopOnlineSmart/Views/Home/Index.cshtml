@@ -2,7 +2,145 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .product-list ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-list li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex: 1 0 30%;
+    }
+
+    .product-list img {
+        max-width: 100%;
+    }
+
+    .product-list h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .product-list p {
+        font-size: 1rem;
+        color: #888;
+        margin-bottom: 10px;
+    }
+
+    .product-list button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .product-list button:hover {
+            background-color: #555;
+        }
+
+    footer {
+        background-color: #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-list">
+            <h2>Products</h2>
+            <ul>
+                <li>
+                    <img src="product-1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src="product-2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src="product-3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$20.00</p>
+                    <button>Add to Cart</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Shopping Website</p>
+    </footer>
+    <script>
+        // Get cart button elements
+const cartButtons = document.querySelectorAll('.product-list button');
+
+// Add click event listener to each cart button
+
+    </script>
+</body>
+</html>
+
