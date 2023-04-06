@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShopOnlineSmart.Data.Configuration;
 using ShopOnlineSmart.Data.Entity;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace ShopOnlineSmart.Data.EF
         public DbSet<Product> Category { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
 
         }
     }
