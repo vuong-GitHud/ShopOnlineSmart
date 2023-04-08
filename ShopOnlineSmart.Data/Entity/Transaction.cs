@@ -1,11 +1,11 @@
-﻿using System;
+﻿
+using ShopOnlineSmart.Data.Entity;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 
-namespace ShopOnlineSmart.Data.Entity
+namespace eShopSolution.Data.Entities
 {
     public class Transaction
     {

@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShopOnlineSmart.Data.Configuration;
 using ShopOnlineSmart.Data.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace ShopOnlineSmart.Data.EF
 {
@@ -14,12 +15,32 @@ namespace ShopOnlineSmart.Data.EF
         public ShopOnlineDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Product> Category { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=VUONGPHAM\\PHAMXUANVUONG;Database=ShopOnlineSmart;Trusted_Connection=True;");
         }
+
+       
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<AppConfig> AppConfigs { get; set; }
+
+
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+
+
+        public DbSet<CategoryTranslation> CategoryTranslations { get; set; }
+        public DbSet<ProductInCategory> ProductInCategories { get; set; }
+
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Language> Languages { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
+
+
     }
 }

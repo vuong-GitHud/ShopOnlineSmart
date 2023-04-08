@@ -17,4 +17,8 @@
     <ProjectReference Include="..\ShopOnlineSmart.Data\ShopOnlineSmart.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>
