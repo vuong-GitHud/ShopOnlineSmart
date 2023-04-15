@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopOnlineSmart.Data.Entity
 {
-    class ProductImage
+   public class ProductImage
     {
         public int Id { get; set; }
 

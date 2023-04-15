@@ -6,8 +6,6 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Transactions;
-
 namespace ShopOnlineSmart.Data.EF
 {
     public class ShopOnlineDbContext : DbContext
@@ -40,6 +38,10 @@ namespace ShopOnlineSmart.Data.EF
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
 
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
+
+        public DbSet<Slide> Slides { get; set; }
 
 
     }
