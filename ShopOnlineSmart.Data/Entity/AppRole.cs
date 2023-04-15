@@ -5,7 +5,6 @@ using System.Text;
 
 namespace ShopOnlineSmart.Data.Entity
 {
-
     public class AppRole : IdentityRole<Guid>
     {
         public string Description { get; set; }

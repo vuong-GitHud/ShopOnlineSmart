@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,6 @@ namespace ShopOnlineSmart.Data.Entity
     public class Cart
     {
         public int Id { set; get; }
-        public int ProductId { set; get; }
         public int Quantity { set; get; }
         public decimal Price { set; get; }
 

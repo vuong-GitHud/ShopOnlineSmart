@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using ShopOnlineSmart.Data.Entity;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Transactions;
 
 namespace ShopOnlineSmart.Data.Entity
@@ -17,6 +19,6 @@ namespace ShopOnlineSmart.Data.Entity
 
         public List<Order> Orders { get; set; }
 
-        public List<System.Transactions.Transaction> Transactions { get; set; }
+        public List<Transaction> Transactions { get; set; }
     }
 }
