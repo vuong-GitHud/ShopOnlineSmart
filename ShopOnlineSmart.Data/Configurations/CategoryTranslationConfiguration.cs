@@ -1,11 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopOnlineSmart.Data.Entity;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ShopOnlineSmart.Data.Configurations
+namespace ShopOnlineSmart.Data.EF
 {
     public class CategoryTranslationConfiguration : IEntityTypeConfiguration<CategoryTranslation>
     {

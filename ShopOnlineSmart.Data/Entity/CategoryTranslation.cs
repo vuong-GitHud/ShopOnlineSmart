@@ -1,4 +1,7 @@
-﻿namespace ShopOnlineSmart.Data.Entity
+﻿using System;
+using System.Text;
+
+namespace ShopOnlineSmart.Data.Entity
 {
     public class CategoryTranslation
     {
@@ -13,5 +16,6 @@
         public Category Category { get; set; }
 
         public Language Language { get; set; }
+
     }
 }

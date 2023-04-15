@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace ShopOnlineSmart.Data.Entity
 {
-   public class Product
+    public class Product
     {
-        internal readonly object ProductTranslations;
-        internal object OrderDetails;
-
         public int Id { set; get; }
         public decimal Price { set; get; }
         public decimal OriginalPrice { set; get; }
         public int Stock { set; get; }
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
-        public object Carts { get; internal set; }
+
+        public bool? IsFeatured { get; set; }
+
+        public List<ProductInCategory> ProductInCategories { get; set; }
+
+        public List<OrderDetail> OrderDetails { get; set; }
+
+        public List<Cart> Carts { get; set; }
+
+        public List<ProductTranslation> ProductTranslations { get; set; }
+
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace ShopOnlineSmart.Data.Entity
         public Status Status { set; get; }
 
         public List<ProductInCategory> ProductInCategories { get; set; }
-
         public List<CategoryTranslation> CategoryTranslations { get; set; }
+
     }
 }

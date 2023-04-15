@@ -16,5 +16,6 @@
         public Product Product { get; set; }
 
         public Language Language { get; set; }
+
     }
 }
