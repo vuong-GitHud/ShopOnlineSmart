@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.Data", "Sho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.Application", "ShopOnlineSmart.Application\ShopOnlineSmart.Application.csproj", "{60196839-8A7F-4008-9CE5-D129ABD85A90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnlineSmart.WebApp", "ShopOnlineSmart.WebApp\ShopOnlineSmart.WebApp.csproj", "{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.WebApp", "ShopOnlineSmart.WebApp\ShopOnlineSmart.WebApp.csproj", "{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnlineSmart.Admin", "ShopOnlineSmart.Admin\ShopOnlineSmart.Admin.csproj", "{8D7697C9-5DFA-4D8F-B6E2-8C29D1B4D4AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7697C9-5DFA-4D8F-B6E2-8C29D1B4D4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7697C9-5DFA-4D8F-B6E2-8C29D1B4D4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7697C9-5DFA-4D8F-B6E2-8C29D1B4D4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7697C9-5DFA-4D8F-B6E2-8C29D1B4D4AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
