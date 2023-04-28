@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.Application
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.WebApp", "ShopOnlineSmart.WebApp\ShopOnlineSmart.WebApp.csproj", "{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnlineSmart.AdminApp", "ShopOnlineSmart.AdminApp\ShopOnlineSmart.AdminApp.csproj", "{5E8F6888-7C10-4616-B543-494C015401F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnlineSmart.AdminApp", "ShopOnlineSmart.AdminApp\ShopOnlineSmart.AdminApp.csproj", "{5E8F6888-7C10-4616-B543-494C015401F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Infrastucture", "1.Infrastucture", "{BA50B24B-78E0-4283-A39B-4E7161F969F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{AA00FBA6-B287-4AAD-8494-1A79A55DD954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Hosts", "3.Hosts", "{DEA0EFFB-5376-4FAA-B9A9-2F2AFE099C0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1AFBC8F4-D895-4FD6-B4EA-6F806AD2E144} = {AA00FBA6-B287-4AAD-8494-1A79A55DD954}
+		{60196839-8A7F-4008-9CE5-D129ABD85A90} = {AA00FBA6-B287-4AAD-8494-1A79A55DD954}
+		{DE5958DF-20A1-4F2F-B68B-CE0DD3225DAB} = {DEA0EFFB-5376-4FAA-B9A9-2F2AFE099C0A}
+		{5E8F6888-7C10-4616-B543-494C015401F1} = {DEA0EFFB-5376-4FAA-B9A9-2F2AFE099C0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B2B062A-D5C5-4187-B97F-4BF8D7E1968C}

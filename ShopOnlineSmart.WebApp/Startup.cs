@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopOnlineSmart.Data.EF;
+using ShopOnlineSmart.WebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace ShopOnlineSmart.WebApp
         {
             services.AddDbContext<ShopOnlineDbContext>(options => options.UseSqlServer(
              Configuration.GetConnectionString("ShopOnlineSmartDb")));
+            
             services.AddControllersWithViews();
         }
 
