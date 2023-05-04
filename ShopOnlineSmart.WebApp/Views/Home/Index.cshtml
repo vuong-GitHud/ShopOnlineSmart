@@ -2,7 +2,68 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="contanier">
+
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>ShopOnlineSmart</h1>
+            </div>
+
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Logins" asp-action="Index">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="fa-solid fa-cart-shopping" asp-area="" asp-controller="Carts" asp-action="Index"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>outfit of the day</span>
+                <h3>all your</h3>
+                <h1>styles are here</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Doloremque unde sunt eum illum ab tempora illo iure sequi <br> minus culpa.
+                </p>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+            <div class="div-img">
+                <img id="big-img" src="jacket1.png" alt="">
+            </div>
+
+            <div class="small-img">
+                <img onclick="myTshirt(this.src)" src="jacket1.png" alt="">
+                <img onclick="myTshirt(this.src)" src="jacket2.png" alt="">
+                <img onclick="myTshirt(this.src)" src="jacket3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myTshirt(shirt) {
+            bigImage.src = shirt
+        }
+    </script>
+</body>
+</html>
