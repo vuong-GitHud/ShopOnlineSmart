@@ -120,8 +120,9 @@ nav.open ~ .overlay {
 
 /* main body content */
 .contanier ul li {
-    display: inline-block;
-    margin-left: 50px;
+/*    top:15px;
+*/    display: inline-block;
+    margin-left: 100px;
     height: 80px;
     position: relative;
     line-height: 80px;
