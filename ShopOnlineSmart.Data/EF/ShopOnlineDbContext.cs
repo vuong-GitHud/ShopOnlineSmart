@@ -54,7 +54,7 @@ namespace ShopOnlineSmart.Data.EF
             //base.OnModelCreating(modelBuilder);
         }
 
-
+        
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }

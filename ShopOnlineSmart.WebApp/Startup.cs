@@ -49,6 +49,7 @@ namespace ShopOnlineSmart.WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
@@ -57,7 +58,10 @@ namespace ShopOnlineSmart.WebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
+           
+
         }
     }
 }

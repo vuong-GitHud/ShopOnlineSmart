@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopOnlineSmart.Data.Entity;
 
-namespace ShopOnlineSmart.Data.EF
+namespace ShopOnlineSmart.Data.Configurations
 {
     public class CategoryTranslationConfiguration : IEntityTypeConfiguration<CategoryTranslation>
     {

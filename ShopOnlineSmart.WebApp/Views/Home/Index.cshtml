@@ -2,28 +2,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <div class="contanier">
-        <div class="content">
-            <div class="div-text">
-                <span>outfit of the day</span>
-                <h3>all your</h3>
-                <h1>styles are here</h1>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Doloremque unde sunt eum illum ab tempora illo iure sequi <br> minus culpa.
-                </p>
-                <a href="#" class="btn">buy now</a>
+    <header>
+        <nav class="menubar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">Shop</span>
+                <div class="contanier">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+
+                </div>
+                <form class="class=" nav-item"">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                        <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <ul class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Login">login</a></li>
+                            <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="div-img">
-                <img id="big-img" src="jacket1.png" alt="">
+            <div class="sidebar">
+                <div class="logo">
+                    <i class="bx bx-menu menu-icon"></i>
+                    <span class="logo-name">Shop</span>
+                </div>
+                <div class="sidebar-content">
+                    <ul class="lists">
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-home-alt icon"></i>
+                                <span class="link">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                                <span class="link">Revenue</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-bell icon"></i>
+                                <span class="link">Notifications</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-message-rounded icon"></i>
+                                <span class="link">Messages</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                                <span class="link">Analytics</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-heart icon"></i>
+                                <span class="link">Likes</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-folder-open icon"></i>
+                                <span class="link">Files</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bottom-cotent">
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-cog icon"></i>
+                                <span class="link">Settings</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                                <i class="bx bx-log-out icon"></i>
+                                <span class="link">Logout</span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
             </div>
-            <div class="small-img">
-                <img onclick="myTshirt(this.src)" src="img/jacket1.png" alt="">
-                <img onclick="myTshirt(this.src)" src="img/jacket2.png" alt="">
-                <img onclick="myTshirt(this.src)" src="img/jacket3.png" alt="">
+        </nav>
+        <section class="overlay"></section>
+    </header>
+
+    <main>
+        <div class="contanier">
+            <div class="content">
+                <div class="div-text">
+                    <span>outfit of the day</span>
+                    <h3>all your</h3>
+                    <h1>styles are here</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Doloremque unde sunt eum illum ab tempora illo iure sequi <br> minus culpa.
+                    </p>
+                    <a href="#" class="btn">buy now</a>
+                </div>
+                <div class="div-img">
+                    <img id="big-img" src="jacket1.png" alt="">
+                </div>
+                <div class="small-img">
+                    <img onclick="myTshirt(this.src)" src="img/jacket1.png" alt="">
+                    <img onclick="myTshirt(this.src)" src="img/jacket2.png" alt="">
+                    <img onclick="myTshirt(this.src)" src="img/jacket3.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
    
 </body>
 </html>

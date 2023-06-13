@@ -110,7 +110,7 @@ nav.open .sidebar {
     pointer-events: none;
     transition: all 0.4s ease;
     background: rgba(0, 0, 0, 0.3);
-}
+}   
 
 nav.open ~ .overlay {
     opacity: 1;
@@ -242,7 +242,7 @@ nav.open ~ .overlay {
             transform: scale(1.2);
         }
 
-/* footer */
+ footer 
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +255,8 @@ ul {
 .footer {
     background-color: #24262b;
     padding: 70px 0;
+    position: relative;
+    top: 1000px;
 }
 
 .footer-col {
